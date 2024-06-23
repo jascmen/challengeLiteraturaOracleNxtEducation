@@ -79,6 +79,7 @@ private void consultarLibrosAPI() throws IOException, InterruptedException {
 Este metodo permite buscar libros en la API de Gutendex, se le solicita al usuario el nombre del libro que desea buscar,
 se formatea el nombre para que pueda ser utilizado en la URL de la API, se realiza la consulta y se guarda la informacion
 en la base de datos.
+![Consulta de libros](/images/buscaLibrosApi.png)
 
 2. Listar libros registrados
 ```java
@@ -87,7 +88,7 @@ private void listarLibrosRegistrados() {
     }
 ```
 Este metodo permite listar los libros que se encuentran registrados en la base de datos.
-
+![Listar libros registrados](/images/listarLibrosRegistrados.png)
 3. Listar autores registrados
 ```java
  private void ListarAutoresRegistrados() {
@@ -95,7 +96,7 @@ Este metodo permite listar los libros que se encuentran registrados en la base d
     }
 ```
 Este metodo permite listar los autores que se encuentran registrados en la base de datos.
-
+![Listar autores registrados](/images/listarAutoresRegistrados.png)
 4. Listar autores vivos en un determinado año
 ```java
 private void listarAutoresEnDeterminadoAnio() {
@@ -113,9 +114,9 @@ private void listarAutoresEnDeterminadoAnio() {
         librosService.listarAutoresVivosEnDeterminadoAnio(anio);
     }
 ```
-
 Este metodo permite listar los autores que se encuentran vivos en un determinado año, se le solicita al usuario el año que desea buscar,
 se valida que el año tenga exactamente 4 digitos y se realiza la consulta en la base de datos.
+![Listar autores en determinado año](/images/listarAutoresEnDeterminadoAnio.png)
 
 5. Listar libros por idioma
 ```java
@@ -137,7 +138,7 @@ private void listarLibrosPorIdioma() {
 ```
 Este metodo permite listar los libros por idioma, se listan los idiomas disponibles, se le solicita al usuario el numero del idioma que desea buscar,
 se valida que la seleccion sea valida y se realiza la consulta en la base de datos.
-
+![Listar libros por idioma](/images/listarLibrosPorIdioma.png)
 6. Buscar libros registrados por titulo
 ```java
 private void buscarLibrosRegistradosPorTitulo() {
@@ -147,7 +148,7 @@ private void buscarLibrosRegistradosPorTitulo() {
     }
 ```
 Este metodo permite buscar libros registrados por titulo, se le solicita al usuario el titulo del libro que desea buscar y se realiza la consulta en la base de datos.
-
+![Buscar libros por titulo](/images/buscarLibrosPorTitulo.png)
 7. Buscar autores registrados por nombre
 ```java
 private void buscarAutoresRegistradosPorNombre() {
@@ -157,7 +158,7 @@ private void buscarAutoresRegistradosPorNombre() {
     }
 ```
 Este metodo permite buscar autores registrados por nombre, se le solicita al usuario el nombre del autor que desea buscar y se realiza la consulta en la base de datos.
-
+![Buscar autores por nombre](/images/buscarAutoresPorNombre.png)
 8. Listar 5 libros más descargados
 ```java
 private void listarLibrosMasDescargados() {
@@ -165,7 +166,7 @@ private void listarLibrosMasDescargados() {
     }
 ```
 Este metodo permite listar los 5 libros mas descargados, se realiza la consulta en la base de datos.
-
+![Listar libros mas descargados](/images/listarLibrosMasDescargados.png)
 9. Mostrar estadísticas de libros registrados
 ```java
 private void mostrarEstadisticas() {
@@ -173,7 +174,7 @@ private void mostrarEstadisticas() {
     }
 ```
 Este metodo permite mostrar las estadisticas de los libros registrados, se realiza la consulta en la base de datos.
-
+![Mostrar estadisticas](/images/mostrarEstadisticas.png)
 ## Contribucion
 - Si deseas contribuir a este proyecto, por favor crea un fork y envia un pull request.
 ## Agradecimientos
