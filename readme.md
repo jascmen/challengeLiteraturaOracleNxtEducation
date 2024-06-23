@@ -184,4 +184,3 @@ la oportunidad de aprender y mejorar mis habilidades en programación.
 ## Autor
 - El proyecto fue desarrollado por [jorgeSanchez](https://github.com/jascmen)
 - Sientete libre de contactarme en [LinkedIn](https://www.linkedin.com/in/jorge-anthony-sanchez-chavez/)
-```
