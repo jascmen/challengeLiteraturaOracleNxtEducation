@@ -181,6 +181,7 @@ public class LibrosService {
         Autor autorConMasLibros = obtenerAutorConMasLibros();
         Idioma idiomaConMasLibros = obtenerIdiomaConMasLibros();
         Optional<Libros> libroConMasDescargas = obtenerLibroConMasDescargas();
+        Optional<Libros> libroConMenosDescargas = obtenerLibroConMenosDescargas();
 
         System.out.println("Estadísticas:");
         System.out.println("Cantidad de libros registrados: " + cantidadLibros);
@@ -190,6 +191,7 @@ public class LibrosService {
         System.out.println("Autor con más libros registrados: " + (autorConMasLibros != null ? autorConMasLibros.getNombre() : "N/A"));
         System.out.println("Idioma con más libros registrados: " + (idiomaConMasLibros != null ? idiomaConMasLibros.getNombre() : "N/A"));
         System.out.println("Libro con más descargas: " + (libroConMasDescargas.isPresent() ? libroConMasDescargas.get().getTitulo() : "N/A"));
+        System.out.println("Libro con menos descargas: " + (libroConMenosDescargas.isPresent() ? libroConMenosDescargas.get().getTitulo() : "N/A"));
         System.out.println("\n");
     }
 
@@ -210,5 +212,10 @@ public class LibrosService {
     private Optional<Libros> obtenerLibroConMasDescargas() {
         return librosRepository.findAll().stream()
                 .max(Comparator.comparingLong(Libros::getDescargas));
+    }
+
+    private Optional<Libros> obtenerLibroConMenosDescargas() {
+        return librosRepository.findAll().stream()
+                .min(Comparator.comparingLong(Libros::getDescargas));
     }
 }
