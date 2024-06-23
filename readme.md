@@ -181,7 +181,7 @@ Este metodo permite mostrar las estadisticas de los libros registrados, se reali
 - Agradezco a [Gutendex](https://gutendex.com/) por proporcionar la API que permite buscar libros.
 - Agradezco al Programa One de [Alura Latam](https://www.linkedin.com/company/alura-latam/) y [Oracle](https://www.linkedin.com/company/oracle/) por brindarme 
 la oportunidad de aprender y mejorar mis habilidades en programación.
-#Autor
+## Autor
 - El proyecto fue desarrollado por [jorgeSanchez](https://github.com/jascmen)
 - Sientete libre de contactarme en [LinkedIn](https://www.linkedin.com/in/jorge-anthony-sanchez-chavez/)
 ```
